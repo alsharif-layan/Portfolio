@@ -56,6 +56,8 @@ window.addEventListener("load", () => {
 const menu = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".nav-links");
 
-menu.addEventListener("click", () => {
-  nav.classList.toggle("active");
-});
+if (menu && nav) {
+  menu.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+}
